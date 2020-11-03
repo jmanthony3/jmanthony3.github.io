@@ -64,7 +64,16 @@
 
 % for header-footer control
 \fancypagestyle{plain}{%
-	\renewcommand{\headrulewidth}{0pt}
+    \fancyhead{}  % Clear header/footer
+    \fancyhead[L]{}
+    %\pagenumbering{arabic}
+    \fancyfoot[C]{\vspace*{-0.5in}}%\thepage}
+    \fancyhead{~\\~\\\textbf{JOBY MILO ANTHONY III}\\\textbf{Permanent$\colon$}~1224 Old Bethany Rd. Pamplin, VA 23958~~|~~\textbf{Current$\colon$}~2300 Weeping Willow Dr. Apt. K, Lynchburg, VA 24501\\\textbf{Cell$\colon$}~434.944.3133~~|~~\textbf{Email$\colon$}~jmanthony1@liberty.edu~~|~~\textbf{LinkedIn$\colon$}\href{https://www.linkedin.com/in/joby-anthony-iii}{\color{hyperlink}https://www.linkedin.com/in/joby-anthony-iii}}
+    \fancyhead[L]{}
+    \fancyhead[R]{
+        \qrcode[height=0.5in]{https://jmanthony3.github.io/}
+    }
+    \renewcommand{\headrulewidth}{0pt}
 }
 \pagestyle{plain}
 \pagecolor{typewriter}
@@ -79,22 +88,7 @@
 
 % Start with title, author, and honor code
 \begin{document}
-\title{}
-\author{}
-\date{}
-\maketitle
 
-\begin{tabular}[t]{cr}
-	\begin{tabular}{c}
-		\begin{tabular}{c}
-			\textbf{JOBY MILO ANTHONY III}
-		\end{tabular} \\
-		\begin{tabular}{l}
-			\textbf{Permanent$\colon$}~1224 Old Bethany Rd. Pamplin, VA 23958~~|~~\textbf{Current$\colon$}~2300 Weeping Willow Dr. Apt. K, Lynchburg, VA 24501\\\textbf{Cell$\colon$}~434.944.3133~~|~~\textbf{Email$\colon$}~jmanthony1@liberty.edu~~|~~\textbf{LinkedIn$\colon$}\href{https://www.linkedin.com/in/joby-anthony-iii}{\color{hyperlink}https://www.linkedin.com/in/joby-anthony-iii}
-		\end{tabular}
-	\end{tabular} 	& \qrcode[height=0.5in]{https://jmanthony3.github.io/
-	%\bottomrule
-\end{tabular}
 
 
 %\vspace*{-0.5in}
