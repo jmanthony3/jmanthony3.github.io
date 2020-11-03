@@ -1,132 +1,208 @@
-\documentclass{article}
-\usepackage{scimisc-cv}
-\usepackage{url}
-\usepackage{xcolor}
+\documentclass[11pt]{article}
 
-\title{Scismic's Recommended CV for Biotech and Pharma Positions}
-\author{Scismic: The Talent Matching Platform for The Life Sciences (www.scismic.com)}
-\date{May 2020}
 
+
+% - - - - - - - PREAMBLE - - - - - - -
+% declare usepackages
+
+    \usepackage{amsmath}
+    \usepackage{amssymb} 				% equations
+    \usepackage{etoolbox}               % updates header/footer macro
+    \usepackage{fancyhdr,lastpage}      % greater header-footer control
+                                        % https://tex.stackexchange.com/questions/109656/same-header-and-footer-for-every-page
+    \usepackage{float} 					% floating-point numbers and line spacing figures
+    \usepackage{geometry}
+    \usepackage{graphicx} 		        % displaying figures to pdf format
+    \usepackage{hyperref}
+    \usepackage{lipsum} 				% placeholder latin until can be filled later
+    \usepackage{longtable}
+    \usepackage{mathtools}
+    \usepackage{tabularx}               % set cell-width for multi-line break
+    \usepackage{titleps}                % for over-riding with custom page style
+                                        % https://en.wikibooks.org/wiki/LaTeX/Customizing_Page_Headers_and_Footers
+    \usepackage{pdfpages}               % https://tex.stackexchange.com/questions/105589/insert-pdf-file-in-latex-document
+    \usepackage{pgfplots}
+    \usepackage{url} 					% url links for references or in-text links
+    \usepackage{wrapfig}
+    \usepackage{xcolor}
+
+
+
+% - - - - - - -   D O C U M E N T   S E T U P   - - - - - - -
+
+% for margin control
+\geometry{
+	paperwidth=8.5in,
+	paperheight=11in,
+	portrait,
+	margin=0.15in,
+}
+\topmargin=-1in
+
+% edit the page color
+\definecolor{typewriter}{RGB}{241 235 221}
 \definecolor{hyperlink}{RGB}{0 0 255}
 
-%% These are custom commands defined in scimisc-cv.sty
-\cvname{Joby Milo Anthony III}
-\cvpersonalinfo{
-1400 Weeping Willow Dr. Apt. 2300K Lynchburg, VA 24501 \cvinfosep 
-434-944-3133 \cvinfosep
-joby.anthony.iii@gmail.com \cvinfosep
-\textbf{LinkedIn$\colon$}\href{https://www.linkedin.com/in/joby-anthony-iii}{\color{hyperlink}https://www.linkedin.com/in/joby-anthony-iii}
-}
 
+% for Garamond typeset
+% https://tug.org/FontCatalogue/cormorantgaramond/
+\usepackage{CormorantGaramond}
+\usepackage[T1]{fontenc}
+%% The font package uses mweights.sty which has some issues with the
+%% \normalfont command. The following two lines fixes this issue.
+\let\oldnormalfont\normalfont
+\def\normalfont{\oldnormalfont\mdseries}
+
+
+% Set command for Roman Numerals
+% https://tex.stackexchange.com/questions/23487/how-can-i-get-roman-numerals-in-text
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+% for header-footer control
+\fancypagestyle{plain}{%
+    \fancyhead{}  % Clear header/footer
+    \fancyhead[L]{}
+    %\pagenumbering{arabic}
+    \fancyfoot[C]{\vspace*{-0.5in}}%\thepage}
+    \fancyhead{~\\~\\\textbf{JOBY MILO ANTHONY III}\\\textbf{Permanent$\colon$}~1224 Old Bethany Rd. Pamplin, VA 23958~~|~~\textbf{Current$\colon$}~2300 Weeping Willow Dr. Apt. K, Lynchburg, VA 24501\\\textbf{Cell$\colon$}~434.944.3133~~|~~\textbf{Email$\colon$}~jmanthony1@liberty.edu~~|~~\textbf{LinkedIn$\colon$}\href{https://www.linkedin.com/in/joby-anthony-iii}{\color{hyperlink}https://www.linkedin.com/in/joby-anthony-iii}}
+    \fancyhead[L]{}
+    \fancyhead[R]{}
+\renewcommand{\headrulewidth}{0pt}
+}
+\pagestyle{plain}
+%\pagecolor{typewriter}
+
+
+
+
+
+%=============================================================
+%=                  B E G I N  D O C U M E N T               =
+%=============================================================
+
+% Start with title, author, and honor code
 \begin{document}
 
-% \maketitle %% This is LaTeX's default title constructed from \title,\author,\date
-
-\makecvtitle %% This is a custom command constructing the CV title from \cvname, \cvpersonalinfo
-
-\section{Summary}
-	%% - - - - - - - - - - S U M M A R Y - - - - - - - - - -
-
-	\begin{itemize}
-		\item Interdisciplinary engineer with skills and experience with computational simulations and numerical analysis
-		\item Led simulation analysis group for Liberty Motorsports electric Formula SAE vehicle
-		\item Deep understanding of physical problem simulation and analysis 
-		\item Self-motivated, problem-solving and collaborative engineer with a passion for excellent results
-		\item Looking to develop controlling functions from mathematic models of complex problems
-	\end{itemize}
+%\vspace*{-0.5in}
+\raggedbottom
 
 
-\section{Technical Skills}
-	%% - - - - - - - - T E C H   S K I L L S - - - - - - - -
-	
-	\begin{itemize}
-		\item \textbf{CAD Modeling:} SolidWorks, SheetWorks, SolidWorks VBA
-		\item \textbf{Finite Element Analysis (FEA):} ANSYS Workbench, ANSYS Mechanical APDL, MATLAB
-		\item \textbf{Computational Fluid Dynamics (CFD):} ANSYS Fluent 
-		\item \textbf{Numerical Modeling:} Differential equations, proofs, bond graphs, thermodynamics 
-		\item \textbf{Programming Languages:} Julia, \LaTeX, MATLAB, Python, and VBA
-		\item \textbf{Molecular biology:} Cloning, PCR, RT/qPCR, Transfection, mini prep, AAV, Retroviral transduction, CRISPR 
-		\item \textbf{Genomics:} RNA library construction for high throughput sequencing 
-		\item \textbf{Computational:} Programming languages (R, Python and Shell script)
-	\end{itemize}
- 
- 
-\section{Research Experience}
-	%% - - - - - - - - - - R E S E A R C H - - - - - - - - -
-	%% Another custom command provide by scimisc-cv.sty.
-	%% First two argumetns are typeset on the first line in bold; 3rd and 4th arguments are typset on second line in italics. 2nd, 3rd and 4th arguments are OPTIONAL
-	\cvsubsection{Liberty University}[]
-	[Undergraduate Researcher][August 2019 to present]
-	
-	
-		\begin{itemize}
-			\item Executed >2,000 hours of CFD for analyzing behavior of $mathscr{M}$-number
-			\item Responsible for collecting and writing on results
-			\item This project led to the submission of 1 journal publication
-		\end{itemize}
-	
-	%% An example of leaving an argument empty
-	\cvsubsection{Liberty University}[]
-	[Capstone Leader][August 2019 to May 2020]
-	
-	
-		\begin{itemize}
-			\item Executed >2,000 hours of CFD for analyzing behavior of $mathscr{M}$-number
-			\item Responsible for collecting and writing on results
-			\item This project led to the submission of 1 journal publication
-		\end{itemize}
 
- 
-\section{Education}
-	%% - - - - - - - - - E D U C A T I O N - - - - - - - - -
-	
-	\begin{itemize}
-		\item PhD, Engineering, Liberty University, Expected 2024  
-		\item BS, Mechanical Engineering (Mathematics), Liberty University, 2020
-	\end{itemize}
+% - - - - - - - - -   B O D Y   - - - - - - - - -
+\newcommand{\customsection}{0.9in}
+\newcommand{\customcolumn}{6.25in}
+\newcommand{\bulletvert}{\vspace*{-0.1in}}
+\begin{table}[!H]
+        \begin{tabular}{l|l}
+% - - - - - -   E D U C A T I O N   - - - - - - -
+            \begin{tabular}[t]{p{\customsection}}
+                \textbf{EDUCATION}
+            \end{tabular}
+            &
+            \begin{tabular}[t]{p{\customcolumn}}
+                \textbf{Liberty University,} Lynchburg, VA \\
+                Bachelor of Science in Mechanical Engineering (Minor in Mathematics), May 2020 \\
+                Overall GPA: 3.3/4.0
+            \end{tabular}\\~\\
+% - - - - - -   E X P E R I E N C E   - - - - - -
+            \begin{tabular}[t]{p{\customsection}}
+                \textbf{RELEVANT EXPERIENCE}
+            \end{tabular}
+            &
+            \begin{tabular}[t]{p{\customcolumn}}
+                % Lab Tech
+                \textbf{Liberty University,} Lynchburg, VA\\
+                Laboratory Technician, Fall 2018 - Spring 2020\bulletvert
+                \begin{itemize}
+                    \item Served as 3D Printing technician to produce parts for students' projects.\bulletvert
+                    \item Created printer settings and material profiles for PLA, ABS, PVA, and TPU from 1,000+ hrs of prints.\bulletvert
+                \end{itemize}\\
+                % Virginia MetalFab
+                \textbf{Virginia MetalFab,} Appomattox, VA\\
+                Engineering Intern, Summer 2019 \bulletvert
+                \begin{itemize}
+                    \item Wrote VBA codes for SolidWorks macros to process large, sheet metal assemblies into drawings according to user-specified template to create flat-patterns, automatic dimensions, and PDF output.\bulletvert
+                    \item Designed and simulated custom tooling for 110-ton break to complete client's special request.\bulletvert
+                \end{itemize}\\ 
+                % Camera
+                \textbf{Freelance,} VA\bulletvert
+                \begin{itemize}
+                    \item Camera Operator, Winter 2013 - Spring 2019\bulletvert
+                    \item Assembled and operated big-body and hand-held cameras for sports, concerts, and conferences.\bulletvert
+                \end{itemize}\\
+                % Miles
+                \textbf{Miles Architecture Group,} Maitland, FL\\
+                Intern, Summer 2016\bulletvert
+                \begin{itemize}
+                    \item Visited jobs sites to document and sketch building plans to meet ADA compliance.\bulletvert
+                    \item Fabricated bubble décor in office foyer. Showcased at: \href{https://www.milesarch.com}{\color{hyperlink}https://www.milesarch.com}\bulletvert
+                \end{itemize}
+            \end{tabular}\\~\\
+% - - - - - - -   P R O J E C T S   - - - - - - -
+            \begin{tabular}[t]{p{\customsection}}
+                \textbf{PROJECTS}
+            \end{tabular}
+            &
+            \begin{tabular}[t]{p{\customcolumn}}
+                \textbf{Formula SAE Team - Liberty Motorsports$\colon$} Simulation and Analysis Sub-system Lead to provide computational and analytical support to design teams for various iterations of key parts: frame geometry, electrical accumulator container, and steering uprights.\\~\\
+                \textbf{\mathscr{M}-Number, A Novel Mixing Parameter$\colon$} Faculty directed research to describe a static mixer's ability to provide a quality of mixing against the pressure drop.\\~\\
+                \textbf{Expandable Containment Unit$\colon$} Student-led research endeavor to create a containment unit with rigid sides to increase in volume upon necessity. Upon implementation, volume was found to increase by 100\%.\\
+                Published research in undergraduate journal: \href{https://digitalcommons.liberty.edu/montview/vol3/iss1/1}{\color{hyperlink}https://digitalcommons.liberty.edu/montview/vol3/iss1/1}
+            \end{tabular}\\~\\
+% - - - - - - -   C O U R S E S   - - - - - - - -
+            \begin{tabular}[t]{p{\customsection}}
+                \textbf{RELEVANT COURSES}
+            \end{tabular}
+            &
+            \begin{tabular}[t]{p{\customcolumn}}
+                \begin{tabular}[t]{p{\customcolumn/3}p{\customcolumn/3}p{\customcolumn/3}}
+                        Senior Design Capstone    &      Computer-Aided Engineering    &   Mechatronics\\
+                    Dynamics Systems Modeling  &   Thermodynamics \rom{2}  &   Fluid Dynamics
+                \end{tabular}
+            \end{tabular}\\~\\
+% - - - - - -   L E A D E R S H I P   - - - - - -
+            \begin{tabular}[t]{p{\customsection}}
+                \textbf{LEADERSHIP}
+            \end{tabular}
+            &   
+            \begin{tabular}[t]{p{\customcolumn}}
+                \textbf{Laboratory Technician Supervisor,} Spring 2020\\
+                Served as supervisor to 3D Printing Team for Liberty University School of Engineering to interface with faculty, order parts and materials, submit work orders, setup training workshops, and establish policy.
+            \end{tabular}\\~\\
+% - - - - - -   E X P E R I E N C E   - - - - - -
+            \begin{tabular}[t]{p{\customsection}}
+                \textbf{ADDITIONAL EXPERIENCE}
+            \end{tabular}
+            &   
+            \begin{tabular}[t]{p{\customcolumn}}
+                \textbf{Research Week 2017$\colon$} Member of winning oral presentation and received \$250 cash prize and a display case of expandable containment unit in Montview Student Union (Fall 2018).
+            \end{tabular}\\~\\
+% - - - - - - - -   S K I L L S   - - - - - - - -
+            \begin{tabular}[t]{p{\customsection}}
+                \textbf{SKILLS}
+            \end{tabular}
+            &   
+            \begin{tabular}[t]{p{\customcolumn}}
+                \textbf{Software$\colon$} SolidWorks, SheetWorks, ANSYS, MATLAB, MakerBot, Cura, Adobe Illustrator\\
+                \textbf{Machines$\colon$} MakerBot Replicator $5^{th}$ Gen, Ultimaker S5, FORTUS 250 mc, Universal Laser PLS 4.75\\
+                \textbf{Coding Experience$\colon$} MATLAB, VBA, C\#, \LaTeX
+            \end{tabular}\\~\\
+% - - - - - - - -   H O N O R S   - - - - - - - -
+            \begin{tabular}[t]{p{\customsection}}
+                \textbf{ACTIVITIES \& HONORS}
+            \end{tabular}
+            &   
+            \begin{tabular}[t]{p{\customcolumn}}
+                \textbf{Engineering Summer Camp,} Summer 2018 and 2019\\
+                Worked with faculty to create and teach course material for local junior high students for 1-week, project-oriented STEM intensive.
+            \end{tabular}
+        \end{tabular}
+\end{table}
 
- 
-\section{Teaching and Mentoring Experience }
-	%% - - - - - - - - - - T E A C H I N G - - - - - - - - -
-
-	\begin{itemize}
-		\item 2014 - Mentored 2 undergraduates in their day-to-day lab activities
-		\item 2012 - Graduate Teaching Assistant for Immunology
-	\end{itemize}
 
 
-\section{Awards}
-	%% - - - - - - - - - - - A W A R D S - - - - - - - - - -
-
-	\begin{itemize}
-		\item Graduate Scholarship 
-		\item F32: NIH Postdoctoral Training Grant
-	\end{itemize}
 
 
-\section{Conference Presentations }
-	%% - - - - - - - - C O N F E R E N C E S - - - - - - - -
-	
-	Take the top 3-4
-	\begin{itemize}
-		\item Keystone Conference for Neurodegenerative Diseases:
-	\end{itemize}
-
- 
-\section{Publications}
-	%% - - - - - - - - P U B L I C A T I O N S - - - - - - -
-	
-	Take the top 5-6, bold your author position 
-
-
-\section{Other Skills}
-	%% - - - - - - - - - - - O T H E R - - - - - - - - - - -
-	
-	\begin{description}[widest=Langauges]
-		\item[Software]	GraphPad Prism, Microsoft Word, Excel, and PowerPoint, ImageJ
-		\item[Languages]	English: professional proficiency.  Mandarin: native.  German: conversational.
-	\end{description}
-
-
-%% that's all folks!
 \end{document}
