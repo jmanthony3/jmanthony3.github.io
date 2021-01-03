@@ -1,6 +1,6 @@
 # Joby M Anthony III
 ![](Images/Joby_M_Anthony_III-Aurabesh.jpg)
-[Resume](https://github.com/jmanthony3/jmanthony3.github.io/blob/master/main.pdf)
+[Resume](Documents/Joby_M_Anthony_III.pdf)
 ## Contact Information
 [LinkedIn](https://www.linkedin.com/in/joby-anthony-iii)
 
