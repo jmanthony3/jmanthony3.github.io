@@ -2,7 +2,7 @@
 ![](Images/Joby_M_Anthony_III-Aurabesh.jpg)
 [Resume](Documents/Joby_M_Anthony_III.pdf)
 ## Contact Information
-[LinkedIn](https://www.linkedin.com/in/joby-anthony-iii)
+[LinkedIn](https://www.linkedin.com/in/joby-m-anthony-iii)
 
 [Email](mailto:jmanthony1@liberty.edu)
 ## Papers
