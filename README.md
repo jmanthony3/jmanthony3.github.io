@@ -9,8 +9,9 @@
 [A Study in the Use of Elastic Materials in Expandable Containment Units](https://digitalcommons.liberty.edu/montview/vol3/iss1/1)
 
 ## iPhone Shortcut Calculators
-[Linear Interpolation](https://www.icloud.com/shortcuts/22796fccdf324357bae266c52714d28c)
+[LinearInterpolation](https://www.icloud.com/shortcuts/cb347f070cca4c57b34cc04d12459312): Law of Similar Triangles to find some third data point certain information and two known data points.
 
-[Newton Raphson](https://www.icloud.com/shortcuts/7c380f392ed94eba9fdea425a586573a)
+[NewtonRaphson](https://www.icloud.com/shortcuts/438fc8e2e2ae4c37b3e2164491243ebb): Numerical, iterative technique for root-finding problems of single-variable equations.
 
-Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/shortcuts/4009902408694f098318e814cf797826) and [SciCal](https://www.icloud.com/shortcuts/a0cf04611dc74faea74a700687af3ecd).
+
+Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/shortcuts/4009902408694f098318e814cf797826) and [SciCal](https://www.icloud.com/shortcuts/a0cf04611dc74faea74a700687af3ecd) for variable substitution in equations.
