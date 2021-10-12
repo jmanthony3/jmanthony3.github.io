@@ -1,4 +1,4 @@
-//C:/Users/jmanthony1/Documents/GitHub/JobyAnthonyIII/MathJax/extensions/TeX/Taylor.js
+//extensions/TeX/Taylor.js
 
 MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
 	MathJax.InputJax.TeX.Definitions.Add({
@@ -11,4 +11,4 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
 	});
 });
 
-// MathJax.Ajax.loadComplete("[MathJax]/extensions/TeX/Taylor.js");
+MathJax.Ajax.loadComplete("[MathJax]/extensions/TeX/Taylor.js");
