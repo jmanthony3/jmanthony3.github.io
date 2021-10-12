@@ -9,4 +9,4 @@ MathJax.Hub.Config({
 	}
 });
 
-MathJax.Ajax.loadComplete("https://github.com/jmanthony3/jmanthony3.github.io/tree/master/Codes/MathJax/extensions/TeX/Taylor.js");
+MathJax.Ajax.loadComplete("https://github.com/jmanthony3/jmanthony3.github.io/blob/master/Codes/MathJax/extensions/TeX/Taylor.js");
