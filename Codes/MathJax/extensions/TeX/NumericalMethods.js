@@ -1,7 +1,8 @@
 MathJax.Hub.Config({
 	TeX: {
 		Macros: {
-			burgers: "{\\vec{b}}"
+			burgers: "{\\vec{b}}",
+			converge: "{\\mathcal{O}({#1})}"
 		}
 	}
 });
