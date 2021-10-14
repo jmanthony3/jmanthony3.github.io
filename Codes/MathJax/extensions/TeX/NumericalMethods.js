@@ -6,7 +6,7 @@ MathJax.Hub.Config({
 			degree: "{^{\\circ}}",
 			degreeC: "{^{\\circ}C}",
 			degreeF: "{^{\\circ}F}",
-			// converge: ["{\\mathcal{O}( {#1} )}", 1],
+			converge: ["{\\mathcal{O}( {#1} )}", 1],
 		}
 	}
 });
