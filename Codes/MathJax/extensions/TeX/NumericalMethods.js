@@ -4,7 +4,8 @@ MathJax.Hub.Config({
 			angstrom: "{\\text{\\AA}}",
 			burgers: "{\\vec{b}}",
 			converge: ["{\\mathcal{O}( {#1} )}", 1],
-			degree: "{^{\circ}}",
+			degreeC: "{^{\circ}C}",
+			degreeF: "{^{\circ}F}",
 		}
 	}
 });
