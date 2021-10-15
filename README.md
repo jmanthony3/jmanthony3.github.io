@@ -45,7 +45,8 @@ Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/s
   - $\degree$
   - $\degreeC$
   - $\degreeF$
-  - $\ludwikHollomann{\sigma_{0}}{K}{\epsilon}{n}$
+  - $\ludwikHollomann{K}{\epsilon}{n}$
+  - $\ludwikHollomann[\sigma_{0}]{K}{\epsilon}{n}$
 - [Numerical Methods](./Codes/MathJax/extensions/TeX/NumericalMethods.js)
   - $\converge{h}$
   - $\degree$
