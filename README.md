@@ -41,7 +41,7 @@ Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/s
 ### MathJax Extensions
 - [Mechanical Metallurgy](./Codes/MathJax/extensions/TeX/MechanicalMetallurgy.js)
   - $\angstrom$
-  - $\burgers1$
+  - $\burgers$
   - $\degree$
   - $\degreeC$
   - $\degreeF$
@@ -52,8 +52,8 @@ Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/s
   - $\degreeC$
   - $\degreeF$
   - $\expexpansion$
-  - $\rk2{t_{k}}{u_{k}}{h}{a}{b}{\lambda}$
-  - $\rk4{t_{k}}{u_{k}}{h}$
+  - $\rkTwo{t_{k}}{u_{k}}{h}{a}{b}{\lambda}$
+  - $\rkFour{t_{k}}{u_{k}}{h}$
   - $\taylor{f}{x}{n}$
   - $\taylorlog{f}$
   - $\taylorsin{f}$
