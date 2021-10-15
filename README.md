@@ -1,3 +1,24 @@
+<script type='text/javascript'
+	src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML'>
+</script>
+<script type='text/x-mathjax-config'>
+	MathJax.Ajax.config.path['Extra'] = 'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX',
+MathJax.Hub.Config({
+		TeX: {
+			equationNumbers: {
+				autoNumber: 'AMS'
+			},
+			extensions: [
+				'[Extra]/MechanicalMetallurgy.js',
+				'[Extra]/NumericalMethods.js'
+			]
+		},
+		tex2jax: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']],
+			blockMath: [['$$', '$$'], ['\\[', '\\]']]
+		},
+	});
+</script>
 # Joby M Anthony III
 ![](./Images/Joby_M_Anthony_III-Aurabesh.jpg)
 [Resume](Documents/Joby_M_Anthony_III.pdf)
@@ -18,4 +39,5 @@
 Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/shortcuts/4009902408694f098318e814cf797826) and [SciCal](https://www.icloud.com/shortcuts/a0cf04611dc74faea74a700687af3ecd) for variable substitution in equations.
 
 ### MathJax Extensions
-[Taylor Polynomial](./Codes/MathJax/extensions/TeX/Taylor.js)
+- [Mechanical Metallurgy](./Codes/MathJax/extensions/TeX/MechanicalMetallurgy.js)
+- [Numerical Methods](./Codes/MathJax/extensions/TeX/NumericalMethods.js)
