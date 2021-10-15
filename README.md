@@ -50,7 +50,10 @@ Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/s
   - $\millerVector{\bar{1}}{0}{\frac{1}{2}}, \millerVectorFamily{\bar{1}}{0}{\frac{1}{2}}, \millerVectorHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}, \millerVectorFamilyHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}$
   - $\millerPlane{\bar{1}}{0}{\frac{1}{2}}, \millerPlaneFamily{\bar{1}}{0}{\frac{1}{2}}$
   - $\millerPlaneHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}, \millerPlaneFamilyHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}$
-  - $\\{\\}$
+  - $\strainTensor{\sigma_{11}}{\sigma_{22}}{\sigma_{33}}{\tau_{12}}{\tau_{13}}{\tau_{23}}{E}{\nu}{G}$
+  - $\stressTensor{\sigma_{11}}{\sigma_{22}}{\sigma_{33}}{\tau_{12}}{\tau_{13}}{\tau_{23}}$
+  - $\trueStrain{\epsilon}$
+  - $\trueStress{\sigma_{0}}{\epsilon}$
 - [Numerical Methods](./Codes/MathJax/extensions/TeX/NumericalMethods.js)
   - $\converge{h}$
   - $\degree$
