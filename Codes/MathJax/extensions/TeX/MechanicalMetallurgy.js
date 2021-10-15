@@ -2,7 +2,7 @@ MathJax.Hub.Config({
 	TeX: {
 		Macros: {
 			angstrom: "{\\mathring{A}}",
-			burgers: "{\\vec{b}}",
+			burgers1: "{\\vec{b}}",
 			degree: "{^{\\circ}}",
 			degreeC: "{^{\\circ}C}",
 			degreeF: "{^{\\circ}F}",

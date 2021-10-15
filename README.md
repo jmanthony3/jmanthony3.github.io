@@ -41,7 +41,7 @@ Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/s
 ### MathJax Extensions
 - [Mechanical Metallurgy](./Codes/MathJax/extensions/TeX/MechanicalMetallurgy.js)
   - $\angstrom$
-  - $\burgers$
+  - $\burgers1$
   - $\degree$
   - $\degreeC$
   - $\degreeF$
