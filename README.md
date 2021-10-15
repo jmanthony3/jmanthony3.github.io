@@ -49,6 +49,7 @@ Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/s
   - $\millerCoords{\bar{1}}{0}{\frac{1}{2}}, \millerCoordsHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}$
   - $\millerVector{\bar{1}}{0}{\frac{1}{2}}, \millerVectorFamily{\bar{1}}{0}{\frac{1}{2}}, \millerVectorHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}, \millerVectorFamilyHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}$
   - $\millerPlane{\bar{1}}{0}{\frac{1}{2}}, \millerPlaneFamily{\bar{1}}{0}{\frac{1}{2}}, \millerPlaneHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}, \millerPlaneFamilyHCP{\bar{1}}{0}{\frac{1}{2}}{z_{1}}$
+  - $\\{\\}$
 - [Numerical Methods](./Codes/MathJax/extensions/TeX/NumericalMethods.js)
   - $\converge{h}$
   - $\degree$
