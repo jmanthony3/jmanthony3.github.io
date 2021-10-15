@@ -6,7 +6,6 @@ MathJax.Hub.Config({
 			degree: "{^{\\circ}}",
 			degreeC: "{^{\\circ}C}",
 			degreeF: "{^{\\circ}F}",
-			// converge: ["{\\mathcal{O}({#1})}", 1],
 			ludwikHollomann: ["{{#1} + {#2}{#3}^{{#4}}}", 4, "\\sigma_{0}", "K", "\\epsilon", "n"],
 			millerCoords: ["{{#1}{#2}{#3}}", 3],
 			millerCoordsHCP: ["{{#1}{#2}{#3}{#4}}", 4],
