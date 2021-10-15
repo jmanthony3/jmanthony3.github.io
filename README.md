@@ -3,19 +3,19 @@
 </script>
 <script type='text/x-mathjax-config'>
 	MathJax.Ajax.config.path['Extra'] = 'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX',
-MathJax.Hub.Config({
+	MathJax.Hub.Config({
 		TeX: {
 			equationNumbers: {
-				autoNumber: 'AMS'
+				autoNumber: 'AMS',
 			},
 			extensions: [
 				'[Extra]/MechanicalMetallurgy.js',
-				'[Extra]/NumericalMethods.js'
-			]
+				'[Extra]/NumericalMethods.js',
+			],
 		},
 		tex2jax: {
 			inlineMath: [['$', '$'], ['\\(', '\\)']],
-			blockMath: [['$$', '$$'], ['\\[', '\\]']]
+			blockMath: [['$$', '$$'], ['\\[', '\\]']],
 		},
 	});
 </script>
@@ -40,4 +40,19 @@ Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/s
 
 ### MathJax Extensions
 - [Mechanical Metallurgy](./Codes/MathJax/extensions/TeX/MechanicalMetallurgy.js)
+  - $\angstrom$
+  - $\burgers$
+  - $\degree$
+  - $\degreeC$
+  - $\degreeF$
 - [Numerical Methods](./Codes/MathJax/extensions/TeX/NumericalMethods.js)
+  - $\converge{h}$
+  - $\degree$
+  - $\degreeC$
+  - $\degreeF$
+  - $\expexpansion$
+  - $\rk2{t_{k}}{u_{k}}{h}{a}{b}{\lambda}$
+  - $\rk4{t_{k}}{u_{k}}{h}$
+  - $\taylor{f}{x}{n}$
+  - $\taylorlog{f}$
+  - $\taylorsin{f}$
