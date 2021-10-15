@@ -6,7 +6,7 @@ MathJax.Hub.Config({
 			degree: "{^{\\circ}}",
 			degreeC: "{^{\\circ}C}",
 			degreeF: "{^{\\circ}F}",
-			ludwikHollomann: ["{{#1} + {#2}{#3}^{{#4}}}", 4, [null, "\\sigma_{0}"], [null, "K"], [null, "\\epsilon"], [null, "n"]],
+			ludwikHollomann: ["{{#1} + {#2}{#3}^{{#4}}}", 4, "0"],
 			millerCoords: ["{{#1}{#2}{#3}}", 3],
 			millerCoordsHCP: ["{{#1}{#2}{#3}{#4}}", 4],
 			millerVector: ["{[{#1}{#2}{#3}]}", 3],
