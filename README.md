@@ -45,14 +45,14 @@ Each of my shortcuts above depend on [SimpleCalculator](https://www.icloud.com/s
   - $\degree$
   - $\degreeC$
   - $\degreeF$
-  - $\ludwikHollomann$
+  - $\ludwikHollomann{\sigma_{0}}{K}{\epsilon}{n}$
 - [Numerical Methods](./Codes/MathJax/extensions/TeX/NumericalMethods.js)
   - $\converge{h}$
   - $\degree$
   - $\degreeC$
   - $\degreeF$
   - $\expexpansion$
-  - $\rkTwo{t_{k}}{u_{k}}{h}{a}{b}{\lambda}$
+  <!-- - $\rkTwo{t_{k}}{u_{k}}{h}{a}{b}{\lambda}$ -->
   - $\rkFour{t_{k}}{u_{k}}{h}$
   - $\taylor{f}{x}{n}$
   - $\taylorlog{f}$
