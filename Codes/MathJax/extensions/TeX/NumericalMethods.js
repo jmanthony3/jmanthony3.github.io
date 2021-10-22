@@ -13,7 +13,7 @@ MathJax.Hub.Config({
 			taylorlog: ["{\\sum_{n=1}^{+\\infty} {(-1)}^{n+1} \\frac{{#1}^{n}}{n}}", 1],
 			taylorsin: ["{\\sum_{n=0}^{+\\infty} \\frac{{(-1)}^{n}}{(2n+1)!} {#1}^{2n+1}}", 1],
 		},
-		packages: {'[+]': ['cancel']}},
+		packages: {'[+]': ['cancel']},
 	}
 });
 
