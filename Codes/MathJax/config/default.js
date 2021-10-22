@@ -1,12 +1,14 @@
-// MathJax.Ajax.config.path['Extra'] = 'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX';
+<script type="text/x-mathjax-config">
+	MathJax.Ajax.config.path['Extra'] = 'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX';
+</script>
 MathJax.Hub.Config({
 	TeX: {
 		equationNumbers: {
 			autoNumber: 'AMS'
 		},
 		extensions: [
-			'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX/NumericalMethods.js',
-			'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX/Taylor.js',
+			'[Extra]/NumericalMethods.js',
+			'[Extra]/Taylor.js',
 		]
 	},
 	tex2jax: {
