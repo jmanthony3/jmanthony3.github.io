@@ -1,6 +1,8 @@
-MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
-	MathJax.InputJax.TeX.Definitions.Add({
-		macros: {
+MathJax.Hub.Config({
+	loader: {load: ['[TeX]/cancel']},
+	TeX: {
+		Packages: {'[+]': ['cancel']},
+		Macros: {
 			converge: ["{\\mathcal{O}({#1})}", 1],
 			degree: "{^{\\circ}}",
 			degreeC: "{^{\\circ}C}",
@@ -12,7 +14,7 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
 			taylorlog: ["{\\sum_{n=1}^{+\\infty} {(-1)}^{n+1} \\frac{{#1}^{n}}{n}}", 1],
 			taylorsin: ["{\\sum_{n=0}^{+\\infty} \\frac{{(-1)}^{n}}{(2n+1)!} {#1}^{2n+1}}", 1],
 		}
-	});
+	}
 });
 
 MathJax.Ajax.loadComplete("https://jmanthony3.github.io/Codes/MathJax/extensions/TeX/NumericalMethods.js");
