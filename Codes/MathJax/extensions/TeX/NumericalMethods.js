@@ -1,7 +1,6 @@
 MathJax.Hub.Config({
-// window.MathJax = {
-	loader: {load: ['[tex]/cancel']},
-	tex: {
+	loader: {load: ['[TeX]/cancel']},
+	TeX: {
 		packages: {'[+]': ['cancel']},
 		Macros: {
 			converge: ["{\\mathcal{O}({#1})}", 1],
@@ -16,7 +15,6 @@ MathJax.Hub.Config({
 			taylorsin: ["{\\sum_{n=0}^{+\\infty} \\frac{{(-1)}^{n}}{(2n+1)!} {#1}^{2n+1}}", 1],
 		}
 	}
-// };
 });
 
 MathJax.Ajax.loadComplete("https://jmanthony3.github.io/Codes/MathJax/extensions/TeX/NumericalMethods.js");
