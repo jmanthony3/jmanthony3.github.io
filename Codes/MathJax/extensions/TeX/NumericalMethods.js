@@ -1,5 +1,5 @@
 MathJax.Hub.Config({
-	loader: {load: ['[tex]/cancel']},
+	loader: {load: ['[TeX]/cancel']},
 	TeX: {
 		Macros: {
 			converge: ["{\\mathcal{O}({#1})}", 1],
