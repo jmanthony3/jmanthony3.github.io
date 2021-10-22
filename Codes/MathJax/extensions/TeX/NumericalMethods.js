@@ -1,6 +1,6 @@
 MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
 	MathJax.InputJax.TeX.Definitions.Add({
-		Macros: {
+		macros: {
 			converge: ["{\\mathcal{O}({#1})}", 1],
 			degree: "{^{\\circ}}",
 			degreeC: "{^{\\circ}C}",
