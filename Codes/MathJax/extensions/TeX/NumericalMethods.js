@@ -1,7 +1,6 @@
 MathJax.Hub.Config({
-	loader: {load: ['[TeX]/cancel']},
 	TeX: {
-		packages: {'[+]': ['cancel']},
+		Packages: {'[+]': ['cancel']},
 		Macros: {
 			converge: ["{\\mathcal{O}({#1})}", 1],
 			degree: "{^{\\circ}}",
