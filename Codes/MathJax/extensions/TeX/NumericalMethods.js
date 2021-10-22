@@ -1,4 +1,5 @@
 MathJax.Hub.Config({
+	loader: {load: ['[TeX]/cancel']},
 	TeX: {
 		Packages: {'[+]': ['cancel']},
 		Macros: {
