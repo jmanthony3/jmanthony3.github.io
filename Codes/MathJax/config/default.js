@@ -1,4 +1,4 @@
-MathJax.Ajax.config.path['Extra'] = 'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX',
+MathJax.Ajax.config.path['Extra'] = 'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX';
 MathJax.Hub.Config({
 	TeX: {
 		equationNumbers: {
