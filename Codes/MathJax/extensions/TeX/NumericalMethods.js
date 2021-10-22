@@ -2,7 +2,7 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
 	MathJax.InputJax.TeX.Definitions.Add({
 		Macros: {
 			converge: ["{\\mathcal{O}({#1})}", 1],
-			degree: "^{\\circ}",
+			degree: "{^{\\circ}}",
 			degreeC: "{^{\\circ}C}",
 			degreeF: "{^{\\circ}F}",
 			expexpansion: "{\\sum_{n=0}^{+\\infty} \\frac{x^{n}}{n!}}",
