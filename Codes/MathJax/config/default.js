@@ -1,6 +1,9 @@
-<script type="text/x-mathjax-config">
-	MathJax.Ajax.config.path['Extra'] = 'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX';
-</script>
+window.MathJax = {
+	AuthorInit: function () {
+		MathJax.Ajax.config.path["Extra"] = 'https://jmanthony3.github.io/Codes/MathJax/extensions/TeX';
+	}
+};
+
 MathJax.Hub.Config({
 	TeX: {
 		equationNumbers: {
