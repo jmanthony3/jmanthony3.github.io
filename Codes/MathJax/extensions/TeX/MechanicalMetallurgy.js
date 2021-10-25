@@ -1,6 +1,9 @@
-MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
-	MathJax.InputJax.TeX.Definitions.Add({
-		macros: {
+MathJax.Hub.Config({
+	TeX: {
+		Macros: {
+// MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
+// 	MathJax.InputJax.TeX.Definitions.Add({
+// 		macros: {
 			angstrom: "{\\mathring{A}}",
 			burgers: "{\\vec{b}}",
 			degree: "{^{\\circ}}",
@@ -21,8 +24,11 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready", function () {
 			stressTensor: ["{\\begin{bmatrix}{#1}, {#4}, {#5} \\\\ {#4}, {#2}, {#6} \\\\ {#5}, {#6}, {#3}\\end{bmatrix}}", 6],
 			trueStrain: ["{\\ln(1 + {#1})}", 1],
 			trueStress: ["{{#1}(1 + {#2})}", 2],
+// 		}
+// 	});
+// });
 		}
-	});
+	}
 });
 
 MathJax.Ajax.loadComplete("https://jmanthony3.github.io/Codes/MathJax/extensions/TeX/MechanicalMetallurgy.js");
