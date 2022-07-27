@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="description" content="Website host of digital resume and course projects.">
+<meta name="author" content="Joby M. Anthony III &lt;jmanthony1@liberty.edu&gt;">
+<title>Joby M. Anthony III</title>
+<style>
+/*! Copyright (C) 2019, TomTom (http://tomtom.com).
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* Extension of the AsciiDoctor CSS for AsciiDoxy.
+ * Adding:
+ * - Floating multipage navigation.
+ */
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
+@import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
+
+/* Multipage navigation */
+div#navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+div#navigation table {
+    margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+    body.toc2 div#navigation {
+        left: 15em;
+    }
+    body.toc2.toc-right div#navigation {
+        right: 15em;
+    }
+}
+@media screen and (min-width: 1280px) {
+    body.toc2 div#navigation {
+        left: 20em;
+    }
+    body.toc2.toc-right div#navigation {
+        right: 20em;
+    }
+}
+
+</style>
+</head>
+<body class="article">
+<div id="header">
+<h1>Joby M. Anthony III</h1>
+<div class="details">
+<span id="author" class="author">Joby M. Anthony III &lt;jmanthony1@liberty.edu&gt;</span><br>
+<span id="revdate">July 27, 2022</span>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#sec-papers">1. Papers</a></li>
+<li><a href="#sec-codes">2. Codes</a></li>
+<li><a href="#_references">References</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="quoteblock abstract">
+<div class="title">Abstract</div>
+<blockquote>
+To view a formal summary of my work and capabilities, please look at my <a href="Documents/Joby_M_Anthony_III.pdf">resume</a>.
+If you wish to speak with me or inquire about some of my work, please me at: <a href="mailto:jmanthony1@liberty.edu">jmanthony1@liberty.edu</a>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec-papers">1. Papers</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>A. Eisenman, J. Anthony, and D. Satagaj, “A Study in the Use of Elastic Materials in Expandable Containment Units,” Montview Liberty University Journal of Undergraduate Research, vol. 3, no. 1, Jun. 2017, [Online]. Available: <a href="https://digitalcommons.liberty.edu/montview/vol3/iss1/1" class="bare">https://digitalcommons.liberty.edu/montview/vol3/iss1/1</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sec-codes">2. Codes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Much of the work I do is automated by scripts and codes for consistency and flexibility with respect to varying input parameters.
+The Python packages were primarily written from <em>Numerical Methods</em> and <em>Ordinary/Partial Differential Equations</em> courses and are used extensively throughout much of other works.
+The Integrated Computational Materials Engineering (ICME) repository is a by-product of taking an ICME course while access to the well-standing website () has been denied for future users.
+Much of the content in my ICME repository references and collects information, processes, methodologies, and scripts from the original ICME website; however, my repository differs with an as-written "installable" environment that future users might quickly quickly begin calculations without as much manual setup.</p>
+</div>
+<div class="paragraph">
+<p>So far, only the <code>numerical_methods</code> module is included to the <code>joby_m_anthony_iii</code> package, but there exists a thought to later add modules for other subject areas such as: mechanics of materials, mechatronics, or physics.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://jmanthony3.github.io/joby_m_anthony_iii/"><code>joby_m_anthony_iii</code></a>: <code>pip install joby_m_anthony_iii</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Much of content in the ICME repository (below) borrows methodologies and information from the original ICME website (), but features an ability to setup the Linux environment necessary for bridging calculations between length scales.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Integrated Computational Materials Engineering (<a href="https://jmanthony3.github.io/ICME/"><code>ICME</code></a>) <strong>Site under development&#8230;&#8203;</strong></p>
+</li>
+<li>
+<p><a href="https://www.icloud.com/shortcuts/cb347f070cca4c57b34cc04d12459312">LinearInterpolation</a>: Law of Similar Triangles to find some third data point certain information and two known data points.</p>
+</li>
+<li>
+<p><a href="https://www.icloud.com/shortcuts/438fc8e2e2ae4c37b3e2164491243ebb">NewtonRaphson</a>: Numerical, iterative technique for root-finding problems of single-variable equations.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Each of the shortcuts above depend on <a href="https://www.icloud.com/shortcuts/4009902408694f098318e814cf797826">SimpleCalculator</a> and <a href="https://www.icloud.com/shortcuts/a0cf04611dc74faea74a700687af3ecd">SciCal</a> for variable substitution in equations.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>bibliography::[]</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

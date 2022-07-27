@@ -1,0 +1,103 @@
+// document metadata
+= Joby M. Anthony III
+Joby M. Anthony III <jmanthony1@liberty.edu>
+:affiliation: PhD Student
+:document_version: 1.0
+:revdate: July 27, 2022
+:description: Website host of digital resume and course projects.
+// :keywords: resume, projects, codes
+:imagesdir: {docdir}/README
+// :bibtex-file: README.bib
+:toc: auto
+:xrefstyle: short
+:sectnums: |,all|
+:chapter-refsig: Chap.
+:section-refsig: Sec.
+:stem: latexmath
+:eqnums: AMS
+// :stylesdir: {docdir}
+// :stylesheet: asme.css
+// :noheader:
+// :nofooter:
+// :docinfodir: {docdir}
+// :docinfo: private
+:front-matter: any
+:!last-update-label:
+
+// example variable
+// :fn-1: footnote:[]
+
+// Python modules
+<%!
+  from engineering_notation import EngNumber as engr
+  import numpy as np
+  from pint import UnitRegistry as ureg
+%>
+// end document metadata
+
+
+
+
+
+// begin document
+[abstract]
+.Abstract
+To view a formal summary of my work and capabilities, please look at my link:Documents/Joby_M_Anthony_III.pdf[resume].
+If you wish to speak with me or inquire about some of my work, please me at: jmanthony1@liberty.edu
+// *Keywords:* _{keywords}_
+
+
+
+[#sec-papers, {counter:secs}]
+== Papers
+:!subs:
+:!figs:
+:!tabs:
+. A. Eisenman, J. Anthony, and D. Satagaj, “A Study in the Use of Elastic Materials in Expandable Containment Units,” Montview Liberty University Journal of Undergraduate Research, vol. 3, no. 1, Jun. 2017, [Online]. Available: https://digitalcommons.liberty.edu/montview/vol3/iss1/1
+
+
+
+[#sec-codes, {counter:secs}]
+== Codes
+:!subs:
+:!figs:
+:!tabs:
+
+Much of the work I do is automated by scripts and codes for consistency and flexibility with respect to varying input parameters.
+The Python packages were primarily written from _Numerical Methods_ and _Ordinary/Partial Differential Equations_ courses and are used extensively throughout much of other works.
+The Integrated Computational Materials Engineering (ICME) repository is a by-product of taking an ICME course while access to the well-standing website () has been denied for future users.
+Much of the content in my ICME repository references and collects information, processes, methodologies, and scripts from the original ICME website; however, my repository differs with an as-written "installable" environment that future users might quickly quickly begin calculations without as much manual setup.
+
+### Python Packages
+So far, only the `numerical_methods` module is included to the `joby_m_anthony_iii` package, but there exists a thought to later add modules for other subject areas such as: mechanics of materials, mechatronics, or physics.
+
+* link:https://jmanthony3.github.io/joby_m_anthony_iii/[`joby_m_anthony_iii`]: `pip install joby_m_anthony_iii`
+
+### Various Software
+Much of content in the ICME repository (below) borrows methodologies and information from the original ICME website (), but features an ability to setup the Linux environment necessary for bridging calculations between length scales.
+
+* Integrated Computational Materials Engineering (link:https://jmanthony3.github.io/ICME/[`ICME`]) *Site under development...*
+
+### iPhone Shortcut Calculators
+* link:https://www.icloud.com/shortcuts/cb347f070cca4c57b34cc04d12459312[LinearInterpolation]: Law of Similar Triangles to find some third data point certain information and two known data points.
+* link:https://www.icloud.com/shortcuts/438fc8e2e2ae4c37b3e2164491243ebb[NewtonRaphson]: Numerical, iterative technique for root-finding problems of single-variable equations.
+
+Each of the shortcuts above depend on link:https://www.icloud.com/shortcuts/4009902408694f098318e814cf797826[SimpleCalculator] and link:https://www.icloud.com/shortcuts/a0cf04611dc74faea74a700687af3ecd[SciCal] for variable substitution in equations.
+
+
+
+// [appendix#sec-appendix-Figures]
+// == Figures
+
+
+
+[bibliography]
+== References
+bibliography::[]
+// end document
+
+
+
+
+
+// that's all folks
