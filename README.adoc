@@ -28,11 +28,11 @@ Joby M. Anthony III <jmanthony1@liberty.edu>
 // :fn-1: footnote:[]
 
 // Python modules
-<%!
-  from engineering_notation import EngNumber as engr
-  import numpy as np
-  from pint import UnitRegistry as ureg
-%>
+// <%!
+//   from engineering_notation import EngNumber as engr
+//   import numpy as np
+//   from pint import UnitRegistry as ureg
+// %>
 // end document metadata
 
 
@@ -59,6 +59,7 @@ To view a formal summary of my work and capabilities, please look at my link:Doc
 :!tabs:
 
 . A. Eisenman, J. Anthony, and D. Satagaj, “A Study in the Use of Elastic Materials in Expandable Containment Units,” Montview Liberty University Journal of Undergraduate Research, vol. 3, no. 1, Jun. 2017, [Online]. Available: https://digitalcommons.liberty.edu/montview/vol3/iss1/1
+. H. Medina, J. M. Anthony, and T. Eldredge, “Evaluating the performance of static mixers using the -number: the case of the Koflo® mixer,” Eng. Res. Express, vol. 5, no. 1, p. 015026, Feb. 2023, doi: 10.1088/2631-8695/acb9d6.
 
 
 
