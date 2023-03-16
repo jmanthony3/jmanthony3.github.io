@@ -3,7 +3,7 @@
 Joby M. Anthony III <jmanthony1@liberty.edu>
 :affiliation: PhD Student
 :document_version: 1.0
-:revdate: July 27, 2022
+:revdate: March 16, 2023
 :description: Website host of digital resume and course projects.
 // :keywords: resume, projects, codes
 :imagesdir: {docdir}/README
