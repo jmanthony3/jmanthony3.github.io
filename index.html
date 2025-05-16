@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.22">
 <meta name="description" content="Website host of digital resume and course projects.">
 <meta name="author" content="Joby M. Anthony III &lt;jmanthony1@liberty.edu&gt;">
 <title>Joby M. Anthony III</title>
@@ -86,10 +86,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -142,7 +142,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -164,6 +164,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -210,13 +211,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -332,7 +330,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -395,7 +393,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -438,12 +436,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article data-line-1">
+<body class="article">
 <div id="header">
 <h1>Joby M. Anthony III</h1>
 <div class="details">
 <span id="author" class="author">Joby M. Anthony III &lt;jmanthony1@liberty.edu&gt;</span><br>
-<span id="revdate">March 16, 2023</span>
+<span id="revdate">May 16, 2025</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -463,7 +461,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="quoteblock abstract data-line-45">
+<div class="quoteblock abstract">
 <div class="title">About Me</div>
 <blockquote>
 I am passionate about learning.
@@ -471,93 +469,100 @@ I enjoy learning, discovering, and discussing new and novel ideas and topics.
 Growing up, my favorite subjects in school were mathematics, chemistry, and physics.
 This passion extended to receiving a Bachelor&#8217;s of Science in Mechanical Engineering with a Minor in Mathematics from Liberty University in 2020.
 The desire for higher education is currently expressed in the pursuit of a PhD with Engineering from Liberty University with Dr. Mark Atwater.
-To view a formal summary of my work and capabilities, please look at my <a href="Documents/Joby_M_Anthony_III.pdf" data-href="Documents/Joby_M_Anthony_III.pdf">resume</a>.
+To view a formal summary of my work and capabilities, please look at my link:Documents/Anthony III, Joby Milo-Resume-20250516.pdf[resume].
+For a more details, please also see my link:Documents/Anthony III, Joby Milo-CV-20250516.pdf[curriculum vitae].
 </blockquote>
 </div>
 </div>
 </div>
-<div class="sect1 data-line-56">
+<div class="sect1">
 <h2 id="sec-papers">1. Papers</h2>
 <div class="sectionbody">
-<div class="olist arabic data-line-61">
+<div class="olist arabic">
 <ol class="arabic">
-<li class="data-line-61">
-<p>A. Eisenman, J. Anthony, and D. Satagaj, “A Study in the Use of Elastic Materials in Expandable Containment Units,” Montview Liberty University Journal of Undergraduate Research, vol. 3, no. 1, Jun. 2017, [Online]. Available: <a href="https://digitalcommons.liberty.edu/montview/vol3/iss1/1" class="undefined" data-href="https://digitalcommons.liberty.edu/montview/vol3/iss1/1">https://digitalcommons.liberty.edu/montview/vol3/iss1/1</a></p>
+<li>
+<p>A. Eisenman, J. Anthony, and D. Satagaj, “A Study in the Use of Elastic Materials in Expandable Containment Units,” Montview Liberty University Journal of Undergraduate Research, vol. 3, no. 1, Jun. 2017, [Online]. Available: <a href="https://digitalcommons.liberty.edu/montview/vol3/iss1/1" class="bare">https://digitalcommons.liberty.edu/montview/vol3/iss1/1</a></p>
 </li>
-<li class="data-line-62">
+<li>
 <p>H. Medina, J. M. Anthony, and T. Eldredge, “Evaluating the performance of static mixers using the -number: the case of the Koflo® mixer,” Eng. Res. Express, vol. 5, no. 1, p. 015026, Feb. 2023, doi: 10.1088/2631-8695/acb9d6.</p>
 </li>
 </ol>
 </div>
 </div>
 </div>
-<div class="sect1 data-line-67">
+<div class="sect1">
 <h2 id="sec-codes">2. Codes</h2>
 <div class="sectionbody">
-<div class="paragraph data-line-72">
+<div class="paragraph">
 <p>Much of the work I do is automated by scripts and codes for consistency and flexibility with respect to varying input parameters.
 The Python packages were primarily written from <em>Numerical Methods</em> and <em>Ordinary/Partial Differential Equations</em> courses and are used extensively throughout much of other works.
-The Integrated Computational Materials Engineering (ICME) repository is a by-product of taking an ICME course while access to the well-standing website (<a href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html" data-href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html">ICME-MS-CAVS</a>) has been denied for future users.
-Much of the content in the ICME repository below references and collects information, processes, methodologies, and scripts from the original ICME website (<a href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html" data-href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html">ICME-MS-CAVS</a>); however, my repository differs with an as-written "installable" environment that future users might quickly begin calculations without as much manual setup for a Debian-based Linux distribution.</p>
+The Integrated Computational Materials Engineering (ICME) repository is a by-product of taking an ICME course while access to the well-standing website (<a href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html">ICME-MS-CAVS</a>) has been denied for future users.
+Much of the content in the ICME repository below references and collects information, processes, methodologies, and scripts from the original ICME website (<a href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html">ICME-MS-CAVS</a>); however, my repository differs with an as-written "installable" environment that future users might quickly begin calculations without as much manual setup for a Debian-based Linux distribution.</p>
 </div>
-<div class="sect2 data-line-79">
+<div class="sect2">
 <h3 id="sec-python">2.1. Python Packages</h3>
-<div class="paragraph data-line-80">
+<div class="paragraph">
 <p>So far, only the <code>numerical_methods</code> module is included to the <code>joby_m_anthony_iii</code> package, but there exists a thought to later add modules for other subject areas such as: mechanics of materials, mechatronics, or physics.</p>
 </div>
-<div class="ulist data-line-82">
+<div class="ulist">
 <ul>
-<li class="data-line-82">
-<p><a href="https://jmanthony3.github.io/joby_m_anthony_iii/" data-href="https://jmanthony3.github.io/joby_m_anthony_iii/"><code>joby_m_anthony_iii</code></a>: <code>pip install joby_m_anthony_iii</code></p>
+<li>
+<p><a href="https://jmanthony3.github.io/joby_m_anthony_iii/"><code>joby_m_anthony_iii</code></a>: <code>pip install joby_m_anthony_iii</code></p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2 data-line-86">
+<div class="sect2">
 <h3 id="sec-julia">2.2. Julia Packages</h3>
-<div class="paragraph data-line-87">
+<div class="paragraph">
 <p>Some research codes were found to be inextricably slow due to Python&#8217;s single-threaded object handling for complex scripts.
 Those codes transpiled into Julia were seen to be much faster.
 The FiniteElementAnalysis.jl package was born out of a Finite Element Analysis (FEA) course to perform FEA at the command line for simple cases.</p>
 </div>
-<div class="ulist data-line-91">
+<div class="ulist">
 <ul>
-<li class="data-line-91">
-<p><a href="https://jmanthony3.github.io/FiniteElementAnalysis.jl/dev/#Index" data-href="https://jmanthony3.github.io/FiniteElementAnalysis.jl/dev/#Index"><code>FiniteElementAnalysis</code></a>: <em>not currently registred with Julia registry</em></p>
+<li>
+<p><a href="https://jmanthony3.github.io/BammannChiesaJohnsonPlasticity.jl/dev/"><code>BammannChiesaJohnsonPlasticity.jl</code></a>: <em>not currently registred with Julia registry</em></p>
+</li>
+<li>
+<p><a href="https://jmanthony3.github.io/LUSE_ENGR701_704_NumericalMethods.jl/dev/"><code>NumericalMethods.jl</code></a>: <em>not currently registred with Julia registry</em></p>
+</li>
+<li>
+<p><a href="https://jmanthony3.github.io/LUSE_ENGR705_FiniteElementAnalysis.jl/dev/"><code>FiniteElementAnalysis</code></a>: <em>not currently registred with Julia registry</em></p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2 data-line-95">
+<div class="sect2">
 <h3 id="sec-software">2.3. Various Software</h3>
-<div class="paragraph data-line-96">
-<p>Much of content in the ICME repository (below) borrows methodologies and information from the original ICME website (<a href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html" data-href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html">ICME-MS-CAVS</a>), but features an ability to setup the Linux environment (which is Debian-based) necessary for bridging calculations between length scales.</p>
+<div class="paragraph">
+<p>Much of content in the ICME repository (below) borrows methodologies and information from the original ICME website (<a href="https://icme.hpc.msstate.edu/mediawiki/index.php.1.html">ICME-MS-CAVS</a>), but features an ability to setup the Linux environment (which is Debian-based) necessary for bridging calculations between length scales.</p>
 </div>
-<div class="ulist data-line-98">
+<div class="ulist">
 <ul>
-<li class="data-line-98">
-<p>Integrated Computational Materials Engineering (<a href="https://jmanthony3.github.io/ICME/" data-href="https://jmanthony3.github.io/ICME/"><code>ICME</code></a>) <em>Site under development&#8230;&#8203;</em></p>
+<li>
+<p>Integrated Computational Materials Engineering (<a href="https://jmanthony3.github.io/ICME/"><code>ICME</code></a>) <em>Site under development&#8230;&#8203;</em></p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2 data-line-102">
+<div class="sect2">
 <h3 id="sec-iphone_shortcuts">2.4. iPhone Shortcut Calculators</h3>
-<div class="paragraph data-line-103">
+<div class="paragraph">
 <p>The following shortcuts allow one to perform calculations directly on the iPhone.</p>
 </div>
-<div class="ulist data-line-105">
+<div class="ulist">
 <ul>
-<li class="data-line-105">
-<p><a href="https://www.icloud.com/shortcuts/cb347f070cca4c57b34cc04d12459312" data-href="https://www.icloud.com/shortcuts/cb347f070cca4c57b34cc04d12459312">LinearInterpolation</a>: Law of Similar Triangles to find some third data point certain information and two known data points.</p>
+<li>
+<p><a href="https://www.icloud.com/shortcuts/cb347f070cca4c57b34cc04d12459312">LinearInterpolation</a>: Law of Similar Triangles to find some third data point certain information and two known data points.</p>
 </li>
-<li class="data-line-106">
-<p><a href="https://www.icloud.com/shortcuts/438fc8e2e2ae4c37b3e2164491243ebb" data-href="https://www.icloud.com/shortcuts/438fc8e2e2ae4c37b3e2164491243ebb">NewtonRaphson</a>: Numerical, iterative technique for root-finding problems of single-variable equations.</p>
+<li>
+<p><a href="https://www.icloud.com/shortcuts/438fc8e2e2ae4c37b3e2164491243ebb">NewtonRaphson</a>: Numerical, iterative technique for root-finding problems of single-variable equations.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph data-line-108">
-<p>Each of the shortcuts above depend on <a href="https://www.icloud.com/shortcuts/4009902408694f098318e814cf797826" data-href="https://www.icloud.com/shortcuts/4009902408694f098318e814cf797826">SimpleCalculator</a> and <a href="https://www.icloud.com/shortcuts/a0cf04611dc74faea74a700687af3ecd" data-href="https://www.icloud.com/shortcuts/a0cf04611dc74faea74a700687af3ecd">SciCal</a> for variable substitution in equations.</p>
+<div class="paragraph">
+<p>Each of the shortcuts above depend on <a href="https://www.icloud.com/shortcuts/4009902408694f098318e814cf797826">SimpleCalculator</a> and <a href="https://www.icloud.com/shortcuts/a0cf04611dc74faea74a700687af3ecd">SciCal</a> for variable substitution in equations.</p>
 </div>
 </div>
 </div>

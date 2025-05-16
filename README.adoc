@@ -3,7 +3,7 @@
 Joby M. Anthony III <jmanthony1@liberty.edu>
 :affiliation: PhD Student
 :document_version: 1.0
-:revdate: March 16, 2023
+:revdate: May 16, 2025
 :description: Website host of digital resume and course projects.
 // :keywords: resume, projects, codes
 :imagesdir: {docdir}/README
@@ -89,7 +89,9 @@ Some research codes were found to be inextricably slow due to Python's single-th
 Those codes transpiled into Julia were seen to be much faster.
 The FiniteElementAnalysis.jl package was born out of a Finite Element Analysis (FEA) course to perform FEA at the command line for simple cases.
 
-* link:https://jmanthony3.github.io/FiniteElementAnalysis.jl/dev/#Index[`FiniteElementAnalysis`]: _not currently registred with Julia registry_
+* link:https://jmanthony3.github.io/BammannChiesaJohnsonPlasticity.jl/dev/[`BammannChiesaJohnsonPlasticity.jl`]: _not currently registred with Julia registry_
+* link:https://jmanthony3.github.io/LUSE_ENGR701_704_NumericalMethods.jl/dev/[`NumericalMethods.jl`]: _not currently registred with Julia registry_
+* link:https://jmanthony3.github.io/LUSE_ENGR705_FiniteElementAnalysis.jl/dev/[`FiniteElementAnalysis`]: _not currently registred with Julia registry_
 
 
 [#sec-software, {counter:subs}]
