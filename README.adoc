@@ -3,7 +3,7 @@
 Joby M. Anthony III <jmanthony1@liberty.edu>
 :affiliation: PhD Student
 :document_version: 1.0
-:revdate: May 16, 2025
+:revdate: May 19, 2025
 :description: Website host of digital resume and course projects.
 // :keywords: resume, projects, codes
 :imagesdir: {docdir}/README
@@ -48,7 +48,7 @@ Growing up, my favorite subjects in school were mathematics, chemistry, and phys
 This passion extended to receiving a Bachelor's of Science in Mechanical Engineering with a Minor in Mathematics from Liberty University in 2020.
 The desire for higher education is currently expressed in the pursuit of a PhD with Engineering from Liberty University with Dr. Mark Atwater.
 To view a formal summary of my work and capabilities, please look at my xref:Documents/Anthony III, Joby Milo-Resume-20250516.pdf[resume].
-For a more details, please also see my xref:Documents/Anthony III, Joby Milo-CV-20250516.pdf[curriculum vitae].
+For a more details, please also see my xref:Documents/Anthony III, Joby Milo-CV-20250519.pdf[curriculum vitae].
 // *Keywords:* _{keywords}_
 
 
@@ -91,7 +91,7 @@ The FiniteElementAnalysis.jl package was born out of a Finite Element Analysis (
 
 * link:https://jmanthony3.github.io/BammannChiesaJohnsonPlasticity.jl/dev/[`BammannChiesaJohnsonPlasticity.jl`]: _not currently registred with Julia registry_
 * link:https://jmanthony3.github.io/LUSE_ENGR701_704_NumericalMethods.jl/dev/[`NumericalMethods.jl`]: _not currently registred with Julia registry_
-* link:https://jmanthony3.github.io/LUSE_ENGR705_FiniteElementAnalysis.jl/dev/[`FiniteElementAnalysis`]: _not currently registred with Julia registry_
+* link:https://jmanthony3.github.io/LUSE_ENGR705_FiniteElementAnalysis.jl/dev/[`FiniteElementAnalysis.jl`]: _not currently registred with Julia registry_
 
 
 [#sec-software, {counter:subs}]
